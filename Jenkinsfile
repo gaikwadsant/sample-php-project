@@ -21,8 +21,7 @@ stage("Create new tag") {
          when {
                expression {env.BRANCH_NAME == 'master'}
             }                     
-            steps {
-                                 
+            steps                                  
                 {
                 script {
                    
@@ -41,8 +40,8 @@ stage("Create new tag") {
                     
                 }
               }
-                
-            }
+            
+           
         }
   
   }
